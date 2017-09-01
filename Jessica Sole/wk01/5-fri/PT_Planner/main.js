@@ -1,6 +1,6 @@
-var alamein = ["flinders street", "richmond", "east richmond", "burnley", "hawthorne","glenferie"];
-var glenWaverly = ["flagstaff", "melbourne central", "parliament", "richmond", "kooyong", "tooronga"];
-var sandringham = ["southern cross", "richmond", "south yarra","prahan","windsor"];
+var alamein = ["Flinders Street", "Richmond", "East Richmond", "Burnley", "Hawthorne","Glenferie"];
+var glenWaverly = ["Flagstaff", "Melbourne Central", "Parliament", "Richmond", "Kooyong", "Tooronga"];
+var sandringham = ["Southern Cross", "Richmond", "South Yarra","Prahan","Windsor"];
 
 var originPosition =[] //array to reference origin position by pushing the given number to represent the chosen origin array and its origin index
 var destinationPos = [] //array to reference destination by pushing the given number to represent the chosen destination array and its  index
@@ -18,7 +18,8 @@ var directions = function(){
 	var output =""; // string created to contain the output from directions function
 
 
-     //determines the array and position of origin
+
+     //determins the array and position of origin
 		if (alamein.indexOf(origin) >= 0){
 		originPosition.push(1 , alamein.indexOf(origin));
 		originTransPos.push(1 , alamein.indexOf(transfer));
@@ -29,8 +30,9 @@ var directions = function(){
 		originPosition.push(3 , sandringham.indexOf(origin));
 		originTransPos.push(3 , sandringham.indexOf(transfer));
 	}
-
         //determines the array and position of destination
+
+        //determins the array and position of destination
 			if (alamein.indexOf(destination) >= 0){
 		destinationPos.push(1 , alamein.indexOf(destination));
 		destinationTransPos.push(1 , alamein.indexOf(transfer));
