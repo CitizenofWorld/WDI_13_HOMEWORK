@@ -11,40 +11,40 @@ var directions = function(){
  	var promptDestination = prompt ("Enter your destination");
 	var origin = promptOrigin.toLowerCase();
 	var destination = promptDestination.toLowerCase();
-	var transfer = "richmond";
+	var transfer = "richmond"; // create a fixed variable for the transfer point, identified transfer position on origin line using transfer poin as destination and origin points.
 	var originTransPos =[]; //array for transfer
 	var destinationTransPos = []; //array for transfer
-	var stops =0; // string iterated to keep track and log number of stops
+	var stops = 0; // string iterated to keep track and log number of stops, stops are added by how many times i run through loop not the array.
 	var output =""; // string created to contain the output from directions function
 
 
 
-     //determins the array and position of origin
+//determins the array and position of origin
 		if (alamein.indexOf(origin) >= 0){
-		originPosition.push(1 , alamein.indexOf(origin));
-		originTransPos.push(1 , alamein.indexOf(transfer));
-	}else if (glenWaverly.indexOf(origin) >= 0){
-		originPosition.push(2 , glenWaverly.indexOf(origin));
-		originTransPos.push(2 , glenWaverly.indexOf(transfer));
-	}else if (sandringham.indexOf(origin) >= 0){
-		originPosition.push(3 , sandringham.indexOf(origin));
-		originTransPos.push(3 , sandringham.indexOf(transfer));
-	}
-        //determines the array and position of destination
+		  originPosition.push(1 , alamein.indexOf(origin));
+		  originTransPos.push(1 , alamein.indexOf(transfer));
+	    }else if (glenWaverly.indexOf(origin) >= 0){
+		  originPosition.push(2 , glenWaverly.indexOf(origin));
+		  originTransPos.push(2 , glenWaverly.indexOf(transfer));
+	    }else if (sandringham.indexOf(origin) >= 0){
+		  originPosition.push(3 , sandringham.indexOf(origin));
+		  originTransPos.push(3 , sandringham.indexOf(transfer));
+	    }
+//determines the array and position of destination
 
-        //determins the array and position of destination
-			if (alamein.indexOf(destination) >= 0){
-		destinationPos.push(1 , alamein.indexOf(destination));
-		destinationTransPos.push(1 , alamein.indexOf(transfer));
-	}else if (glenWaverly.indexOf(destination) >= 0){
-		destinationPos.push(2 , glenWaverly.indexOf(destination));
-		destinationTransPos.push(2 , glenWaverly.indexOf(transfer));
-	}else if (sandringham.indexOf(destination) >= 0){
-		destinationPos.push(3 , sandringham.indexOf(destination));
-		destinationTransPos.push(3 , sandringham.indexOf(transfer));
-	}
+//determins the array and position of destination
+		if (alamein.indexOf(destination) >= 0){
+		  destinationPos.push(1 , alamein.indexOf(destination));
+		  destinationTransPos.push(1 , alamein.indexOf(transfer));
+	    }else if (glenWaverly.indexOf(destination) >= 0){
+		  destinationPos.push(2 , glenWaverly.indexOf(destination));
+		  destinationTransPos.push(2 , glenWaverly.indexOf(transfer));
+	    }else if (sandringham.indexOf(destination) >= 0){
+		  destinationPos.push(3 , sandringham.indexOf(destination));
+		  destinationTransPos.push(3 , sandringham.indexOf(transfer));
+	    }
 
-	// if the origin and destination are on the same line and origin is before the destination this statement will run
+// if the origin and destination are on the same line and origin is before the destination this statement will run
 
 	 if (originPosition[0] === destinationPos[0] && originPosition[1] !== destinationPos[1] && originPosition[1] < destinationPos[1]){
 	 	//the for loop prints each stop in increasing order from origin to destination
@@ -58,10 +58,10 @@ var directions = function(){
 	 	    }
 	 	    output += " -----> "; // adds arrow to output in between each stop
 	 	    stops++; // adds number of stops to var stops
-	 	  }
 	 	}
+	}
 
-	// if the origin and destination are on the same line and origin is after the destination this statement will run
+// if the origin and destination are on the same line and origin is after the destination this statement will run
 
 	 if (originPosition[0] === destinationPos[0] && originPosition[1] !== destinationPos[1] && originPosition[1] > destinationPos[1]){
 	 	//the for loop prints each stop in decreasing order from origin to destination
@@ -75,11 +75,11 @@ var directions = function(){
 	 	    }
 	 	    output += " -----> "; // adds arrow to output in between each stop
 	 	    stops++; // adds number of stops to var stops
-	 	  }
-
 	 	}
 
-	 	// if the origin and destination are not on the same line and origin is before the transfer this statement will run
+	}
+
+// if the origin and destination are not on the same line and origin is before the transfer this statement will run
 
 	 if (originPosition[0] !== destinationPos[0] && originPosition[1] < originTransPos[1]){
 	 	//the for loop prints each stop in increasing order from origin to transfer
@@ -93,9 +93,9 @@ var directions = function(){
 	 	    }
 	 	    output += " -----> "; // adds arrow to output in between each stop
 	 	    stops++; // adds number of stops to var stops
-	 	  }
-
 	 	}
+
+	 }
 
 // if the origin and destination are not on the same line and origin is after the transfer this statement will run
 	  if (originPosition[0] !== destinationPos[0] && originPosition[1] > originTransPos[1]){
@@ -114,7 +114,7 @@ var directions = function(){
 
 	 	}
 
-	 		 	// if the origin and destination are not on the same line and transfer is before the destination this statement will run
+ // if the origin and destination are not on the same line and transfer is before the destination this statement will run
 
 	 if (originPosition[0] !== destinationPos[0] && destinationTransPos[1] < destinationPos[1]){
 	 	//the for loop prints each stop in increasing order from origin to transfer
@@ -146,10 +146,10 @@ var directions = function(){
 	 	    }
 	 	    output += " -----> "; // adds arrow to output in between each stop
 	 	    stops++; // adds number of stops to var stops
-	 	  }
 	 	}
+	 }
 
-output += destination;
+output += destination; // append destination to avoid printing arrow at the end 
 console.log(output + "\n" + stops + " stops");
 
 }
