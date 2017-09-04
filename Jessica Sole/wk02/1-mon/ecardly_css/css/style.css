@@ -1,0 +1,20 @@
+body{
+	background-image: url("images/background.jpg");
+}
+.container {
+	margin: 30px;
+	}
+.aside{
+	float: right;
+	display: block;
+	width: 400px;
+}
+.wrapper {
+	float: left;
+	display: block;
+	width: 400px;
+	height:800px;
+}
+.dotted-hr{
+	border-style: 1px dotted black;
+}
