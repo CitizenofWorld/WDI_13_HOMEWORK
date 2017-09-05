@@ -1,21 +1,22 @@
 body{
 	background-color: #e6e6e6;
-	background-image: url("images/background.jpg");
-	background-repeat: repeat-y;
-    background-size: cover;
 	margin: 70px;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 span{
 	color:#ff6600;
 	font-weight: bold;
 }
-header {
+.header {
 	margin: 0 auto;
-    }
-main {
-	padding: 80px;
+	background-image: url("background.jpg");
 }
-.header-img {
+main {
+	padding: 150px;
+}
+.logo-img {
 	display: block;
 	margin: auto;
 	padding-left: 35px;
