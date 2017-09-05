@@ -12,14 +12,17 @@ span{
 .header {
 	margin: 0 auto;
 	background-image: url("background.jpg");
+	background-repeat: repeat-x;
 }
 main {
 	padding: 150px;
+	padding-top: 90px;
 }
 .logo-img {
 	display: block;
 	margin: auto;
 	padding-left: 35px;
+	padding-top: 30px;
 }
 .container {
 	margin: 0px 30px;
