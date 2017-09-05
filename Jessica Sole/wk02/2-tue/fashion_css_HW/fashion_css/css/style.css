@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 20%;
+	width: 100%;
+	margin-top: 0;
+}
+
+a {
+	color: red;
+	text-align: right;
+	text-decoration: none;
+	float: right;
+}
+
+h1 {
+	margin: 0;
+}
+
+.main-container {
+	width: 80%;
+	vertical-align: top;
+	color: grey;
+}
+
+main {
+	width: 60%;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: top;
+
+}
+
+aside {
+	width: 20%;
+	display: inline-block;
+	margin-left: 20px;
+	vertical-align: top;
+
+}
+
+.aside-li {
+	color: pink;
+	list-style: none;
+}
+
+ .aside-li::before {
+  color: grey;
+  content: "\2022"; 
+  font-size: 1em; 
+  padding-right: 1.1225em; 
+  position: relative;
+  top: 0em; 
+}
+
+.aside-img {
+	border-top: 1px solid #cccccc;
+    padding: 20px 0;
+}
+
+.aside-title {
+	margin-left: 0;
+}
+
+article {
+	border-bottom: 1px solid #cccccc;
+	margin: 25px;
+}
+
+.article-title {
+	margin-top: 0;
+	font-weight: 200;
+}
+
+.article-date {
+	font-weight: 100;
+    color: #cccccc;
+    margin-bottom: 0;
+}
+
+.list-container {
+	padding: 10px;
+    border-top: 1px solid #cccccc;
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+}
+
+footer nav ul li {
+    width: auto;
+    list-style: none;
+    border-right: 1px solid #cccccc;
+    background-color: white;
+    color: pink;
+    padding-right: 2px;
+    display: inline-block;
+}
+
+footer p {
+	color: #cccccc;
+}
+
+img {
+	width: 100%;
+
+}
+
+.header-nav-li{
+	list-style: none;
+	border: 1px solid white;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-right: -5px;
+    font-size: 24px;
+    height: 10px;
+    padding: 25px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.article-container {
+	display: inline-block;
+}
+
+.header-h1 .header-h2 {
+	display: inline-block;
+}
+
+.header-h1 {
+	color: red;
+}
+
+.header-h2 {
+	padding-left: 18px;
+    font-weight: 100;
+    font-size: 24px;
+    color: grey;
+}
+.first-letter:first-letter {
+	font-size: 80px;
+	color: #e6e6e6;
+	float: left;
+	font-weight: 100;
+}
+
