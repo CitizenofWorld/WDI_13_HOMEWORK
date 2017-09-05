@@ -19,7 +19,7 @@ var directions = function(){
 
 
 
-     //determins the array and position of origin
+     //determines the array and position of origin
 		if (alamein.indexOf(origin) >= 0){
 		originPosition.push(1 , alamein.indexOf(origin));
 		originTransPos.push(1 , alamein.indexOf(transfer));
