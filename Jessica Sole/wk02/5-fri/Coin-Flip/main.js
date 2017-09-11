@@ -23,14 +23,22 @@ var tails = 0;
 	var bowserCurrentLeft = parseInt(bowserImg.style.left);
 	var randomNumber = coin[Math.floor( (Math.random() * coin.length))];
 
+		   		if (heads === 5 || tails === 5){
+	               marioImg.style.left = 550 + "px";
+	               bowserImg.style.left = 550 + "px";
+	               heads = 0;
+	               tails = 0;
+	               return 
+	               }
+
+
 			   if ( randomNumber === "heads"){
 		  	 	heads ++
 		  	 	marioImg.style.left = (marioCurrentLeft + 100) + "px";
-		   	}else{
+		   	    }else{
 		   		tails ++
 		   		bowserImg.style.left = (bowserCurrentLeft + 100) + "px";
 		   	}
-
 	}
 
 

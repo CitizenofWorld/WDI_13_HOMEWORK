@@ -3,25 +3,100 @@
 }
 
 body {
-	background-color: 
+	margin: 20px;
+	background-color: #bfbfbf;
+	margin-top: 0;
+}
+
+header {
+ font-size: 24px;
+ text-align: center;
+font-family: 'Orbitron', sans-serif;
+margin-top: 20px;
+
+}
+
+.main-box {
+	width: 1000px;
+    border: 1px solid black;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #808080
+;
+    color: white;
 }
 
 .tails-bowser {
-	width: 15%;
-	
-	/*position: absolute;
-*/
+	width: 5%;
+	padding: 5px;
+	margin-top: 115px;
 }
 
-.img-container {
+.mario-container {
 	display: block;
+	height: 240px;
+    border-bottom: 2px dotted black;
+     background-image: url("images/background.png");
+     background-repeat: no-repeat;
+     background-size: 600px 250px;
+
+
 }
+
+.bowser-container {
+	 background-image: url("images/background.png");
+	 background-repeat: no-repeat;
+	display: block;
+	height: 258px;
+    background-size: 600px 250px;
+ }
 
 .heads-mario {
-	width: 13%;
-	/*position: absolute;
-*/}
+	width: 5%;
+	padding: 5px;
+	margin-top: 85px;
+}
+
+#button {
+	position: absolute;
+    bottom: 205px;
+    width: 8%;
+    margin: 0 auto;
+    height: 125px;
+    border-radius: 73px;
+    text-align: center;
+    background-color: #ffbf00;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
 
 .container {
-	
+	height: 492px;
+    border: 1px solid black;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 80px;
+   
 }
+
+.score {
+	position: absolute;
+    bottom: 196px;
+    width: 20%;
+    margin: 0 auto;
+    height: 150px;
+    background-color: white;
+    color: black;
+    right: 400px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+
+
+
