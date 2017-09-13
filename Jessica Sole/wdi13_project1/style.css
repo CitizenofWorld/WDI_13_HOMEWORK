@@ -10,12 +10,12 @@
   height: 170px;
 }
 
-.ninja1 {
+.ninja-cat {
 background-image: url("images/catNinja.png");
 background-repeat: no-repeat;
 }
 
-.ninja2 {
+.ninja-dog {
 background-image:  url("images/dogNinja.jpeg");
 background-repeat: no-repeat;
 background-size: 174px;
