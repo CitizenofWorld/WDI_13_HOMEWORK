@@ -2,34 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Ninja Tic Tac Toe</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="main-container">
 <header>
-	<div class="score-box"></div>
-	<div class="round-count"></div>
+	<div class="score-box">SCORE</div>
+	<div class="round-count">ROUND</div>
 </header>
 <button class="fight-button">FIGHT</button>
-<div class="game-board">
-	<div class="row1">
-		<div id="col" class="col1"></div>
-		<div id="col" class="col2"></div>
-		<div id="col" class="col3"></div>
+<div id="game-board" class="game-board">
+	<div id="row1" class="row1">
+		<div id="box0-0" class="col1 col"></div>
+		<div id="box0-1" class="col2 col"></div>
+		<div id="box0-2" class="col3 col"></div>
 	</div>
-		<div class="row1">
-		<div id="col" class="col1"></div>
-		<div id="col" class="col2"></div>
-		<div id="col" class="col3"></div>
+	<div id="row2" class="row2">
+		<div id="box1-0" class="col4 col"></div>
+		<div id="box1-1" class="col5 col"></div>
+	<div id="box1-2" class="col6 col"></div>
 	</div>
-		<div class="row1">
-		<div id="col" class="col1"></div>
-		<div id="col" class="col2"></div>
-		<div id="col" class="col3"></div>
+	<div id="row3" class="row3">
+		<div id="box2-0" class="col7 col"></div>
+		<div id="box2-1" class="col8 col"></div>
+		<div id="box2-2" class="col9 col"></div>
 	</div>
 </div><!--- end .game-board-->
-<script type="text/javascript" scr="main.js"></script>
 </div> <!-- end main container -->
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
