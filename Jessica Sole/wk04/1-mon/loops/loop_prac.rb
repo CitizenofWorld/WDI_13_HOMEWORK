@@ -1,5 +1,6 @@
 #You are to generate a basic "guess my number" game. The computer will pick a random number between 0 and 10. The user will 
 #guess the number until they guess correctly
+#https://gist.github.com/epoch/c05113c6b3666711c773x
 require 'pry'
 
 
