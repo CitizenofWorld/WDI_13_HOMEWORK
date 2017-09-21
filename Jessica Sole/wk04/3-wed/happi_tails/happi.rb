@@ -2,16 +2,18 @@
 
 
 
-class Animals
+class Adopt
 
-	def initialize(name, age, gender, species)
+attr_accessor :name 
+
+	def initialize(name)
 		@name = name
-		@age = age
-		@gender = gender
-		@species = species
-		@toys = []
+		@animal_inventory = []
 		end
 
+	def display_animals
+		
+	end
 
 
 

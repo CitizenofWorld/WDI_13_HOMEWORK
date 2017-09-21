@@ -2,8 +2,9 @@
 
 
 class Animal
+	attr_accessor :name, :age, :gender, :species, :inventory 
 
-	def initialize(name, age, gender, species, inventory)
+	def initialize(name, age, gender, species)
 		@name = name
 		@age = age
 		@gender = gender
@@ -11,13 +12,11 @@ class Animal
 		@inventory = []
 	end
 
-	def animal_info
 
-		puts "My name is #{@name}. I am a #{@age} year old #{@gender} #{@species}."
-	end
 
 	def create_animal(info)
 			@inventory.push(info)
+			puts "You added #{@name} to the shelter"
 	end
 
 
