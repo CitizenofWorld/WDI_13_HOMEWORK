@@ -22,7 +22,7 @@ users["Jonathan"][:twitter]
 
 
 #How would you add the number 7 to Erik's favorite numbers?
-users['Erik'][:favorite_numbers] << 7
+users["Erik"][:favorite_numbers] << 7
 
 
 # How would you add yourself to the users hash?
@@ -33,7 +33,7 @@ users["Jessica"] = { :twitter=>"jfhejfhej", :favorite_numbers=>[13, 29] }
 users["Erik"][:favorite_numbers]
 
 # How would you return the smallest of Erik's favorite numbers?
-users["Erik"][:favorite_numbers].sort[0]
+users["Erik"][:favorite_numbers].sort.first # or use .min to get the smallest
 
 # How would you return an array of Anil's favorite numbers that are also even?
 users["Erik"][:favorite_numbers].select{|num| num.even?}
@@ -42,7 +42,7 @@ users["Erik"][:favorite_numbers].select{|num| num.even?}
 fav_num_arr = []
 
 users.each do |key, value|
-  puts fav_num_arr += value[:favorite_numbers]
+  fav_num_arr += value[:favorite_numbers]
 end
 
 
