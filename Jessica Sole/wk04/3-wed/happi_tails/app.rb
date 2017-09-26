@@ -2,10 +2,15 @@ require 'pry'
 require_relative 'animal'
 require_relative 'client'
 require_relative 'shelter'
+print 'Would you like to use our system '
+entry_answer = gets.chomp
 
-print 'Hello, would you like to add animal, add client? '
+loop  do
+
+
+print 'Hello, would you like to add animal or add client? '
 answer = gets.chomp.downcase
-
+r
 
 case answer
 	when "add animal"
@@ -40,34 +45,32 @@ case answer
 		puts "Would you like to look at client or animal inventory "
 		shelter_answer = gets.chomp.downcase
 			if shelter_answer == "animal"
-				new_animal_entry.inventory
+				puts new_animal_entry.inventory
 			elsif shelter_answer == "client"
-				new_client_entry.client_list
+				puts new_client_entry.client_list
 			else
 				puts "Error: incorrect input"
 			end
 
-	end
-
-	print "Would you like to adopt an animal? "
-	answer2 = gets.chomp
-
-	when "yes"
-		puts "Who would you like to adopt? "
-		adopt_name = gets.chomp
-		new_adopt = Adopt.new(adopt_name)
-
-
-
 	else
-		puts "Have a nice day!"
+		puts "Thank you have a nice day!"
 
 
+		next
+	end
 end
+# class variable @@animals = []
+# def Animal.display_animal(animals)-----------use class method to work with all the objects you have
+# animal.each do |animal|
+# 	puts animal.name
+# end
 
-
-
-
+# def Animal.find(animals, animal_name)
+# 	animals.each do |animal|
+# 		if animal == animal_name
+# 			return animal_name
+# 		end
+# 	end
 
 
 

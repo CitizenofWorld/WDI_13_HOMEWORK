@@ -1,7 +1,3 @@
-
-
-
-
 class Adopt
 
 attr_accessor :name 
