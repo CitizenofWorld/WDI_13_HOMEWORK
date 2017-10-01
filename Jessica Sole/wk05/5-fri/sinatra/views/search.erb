@@ -1,6 +1,18 @@
+<h1>Search Results</h1>
+
 
 <ul>
-<% @movies.each do |movie| %>
-<li><%= movie["Title"] %></li>
-<% end %>
+	<% @movies.each do |movie| %>
+		<li>
+			<img class="search-img" src="<%= movie["Poster"] %>" >
+			<div class="button">
+			<a href="detail?search=<%=movie["Title"]%>"><button type="submit">Details</button> </a>
+			</div>
+			<div class="search-title">
+			<h3>Movie Title: <%= movie["Title"] %></h3>
+			<h3> Release Date: <%= movie["Year"] %> </h3>
+			</div>
+      </div>
+		</li>
+	<% end %>
 </ul>

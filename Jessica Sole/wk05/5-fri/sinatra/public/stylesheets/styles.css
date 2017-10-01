@@ -1,0 +1,58 @@
+.main-container{
+	 background: lightgray;
+   width: 40%;
+   margin: 0 auto;
+}
+ul {
+	list-style: none;
+}
+
+img {
+	padding-left: 4%;
+}
+
+h1 {
+	text-align: center;
+}
+form {
+	text-align: center;
+}
+
+.info-container{
+	text-align: center;
+}
+
+.details {
+    margin: 3px;
+    text-align: left;
+    padding: 2px;}
+
+.plot-container{
+	padding: 10px;
+}
+.heading{
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+li{
+	width: 60%;
+   margin: 0 auto;
+    background-color: lightgray;
+    border: 1px solid black;
+        padding: 10px;
+    margin-top: 10px;
+}
+.search-img {
+	    margin-left: 20%;
+
+}
+button {
+	    text-align: center;
+}
+.form-container{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
