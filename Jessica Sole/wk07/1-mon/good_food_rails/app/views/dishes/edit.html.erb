@@ -1,0 +1,10 @@
+<form action="/dishes/<%= @dish.id %>" method="post">
+<input type="hidden" name="_method" value="put">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<label for="">title</label>
+	<input type="text" name="title" value="<%= @dish.title %>">
+	<label for="">content</label>
+	<textarea name="content"> <%= @dish.content %> </textarea>
+		<button>update</button>
+</form>
+

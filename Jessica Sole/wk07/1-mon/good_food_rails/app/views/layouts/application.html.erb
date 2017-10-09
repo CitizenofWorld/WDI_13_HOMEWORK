@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GoodFoodRails</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav>
+  	<ul>
+  		<li>
+  			<a href="/dishes">Home</a>
+  		</li>
+  		<li>
+  			<a href="/dishes/new">Add Dish</a>
+  		</li>
+  	</ul>
+  </nav>
+    <%= yield %>
+  </body>
+</html>
