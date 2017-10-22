@@ -32,3 +32,5 @@ $("#search-btn").on('click', function(event){
 	$.ajax( options ).done( appendMovie )
 
 });
+
+
