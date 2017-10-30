@@ -2,6 +2,7 @@ class DishesController < ApplicationController
 
 	def show
 		@dish = Dish.find(params[:id])
+		@comments = @dish.comments
 		# markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
 		# @content_html = markdown.render(@dish.content)
 

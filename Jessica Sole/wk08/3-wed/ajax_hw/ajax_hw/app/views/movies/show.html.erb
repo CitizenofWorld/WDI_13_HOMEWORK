@@ -1,0 +1,44 @@
+
+<h1>Movie Search</h1>
+<div class="results">
+		<h2></h2>
+</div>
+
+
+<form action="/api/movies/id" method="post">
+	<label for="">Title</label>
+	<textarea name=""></textarea>
+	<button id="search-btn">search</button>
+</form>
+
+
+
+<script>
+	$('#search-btn').on('click', function(event) {
+		event.preventDefault();
+
+		var options = {
+			url: "http://www.omdbapi.com/",
+			method: "get",
+			data: { apikey: '2f6435d9',
+			s: $('textarea').val()
+		}
+	}
+
+
+		var appendMovie = function(response){
+			console.log(response.Title);
+			var $h2 = $('<h2>').text( response.Title );
+
+				$('.results').append( $h2 );
+
+		}
+
+
+		$.ajax( options ).done( appendMovie )
+
+	});
+
+
+
+</script>

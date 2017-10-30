@@ -2,14 +2,17 @@
 <html>
   <head>
     <title>GoodFoodRails</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-  <nav>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+ <!--  <nav>
   	<ul>
   		<li>
   			<a href="/dishes">Home</a>
@@ -18,7 +21,48 @@
   			<a href="/dishes/new">Add Dish</a>
   		</li>
   	</ul>
-  </nav>
-    <%= yield %>
+  </nav> -->
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>Dishes</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="/dishes" class="mdl-layout__tab is-active">Dishes</a>
+          <a href="/dishes/new" class="mdl-layout__tab">Add Dish</a>
+          <a href="#features" class="mdl-layout__tab">Dish Venues</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>DISHES</h4>
+    								<%= yield %>
+              </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+              <li class="mdl-menu__item">Lorem</li>
+              <li class="mdl-menu__item" disabled>Ipsum</li>
+              <li class="mdl-menu__item">Dolor</li>
+            </ul>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+        
+          </section>
+        </div>
+
+
+        </div>
+        
+    </div>
   </body>
 </html>
