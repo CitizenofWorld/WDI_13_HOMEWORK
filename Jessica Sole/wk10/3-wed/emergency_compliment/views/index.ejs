@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/styles.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+	var colors = ['green', 'mistyrose', 'lightblue', 'purple','yellow']
+	var compliments = [
+  "Your instructors love you",
+  "High five = ^5",
+  "You're great!",
+  "It's almost beer o'clock",
+  "The Force is strong with you"
+]
+		var randNumber = function () {
+			var num = Math.floor((Math.random() * colors.length));
+			return num;
+		};
+
+		var randBackgroundColor = colors[randNumber()];
+		var randCompliment = compliments[randNumber()];
+
+
+		var changeColor = function() {
+			$('body').css("background-color", randBackgroundColor);
+		}
+
+		var appendCompliment = function(){
+			$('p').append(randCompliment);
+		}
+
+		var getCompliment = function(){
+			var currentCompliment = $('.class').val();
+			return currentCompliment;
+		}
+
+	</script>
+</head>
+<body onload="changeColor(), appendCompliment()">
+	<div class="container">
+		<h1> Hello Lucky 13!</h1>
+		<img src="http://cf.chucklesnetwork.com/items/9/7/4/3/2/original/13-is-my-lucky-number.jpg" alt="">
+		<p></p>
+
+	  <form action="/randy">
+	  <label for="">Enter your name</label>
+	  	<input type="text" name="nameVal">
+	  	<button> ENTER </button>
+	  </form> 
+
+	 </div><!--/container-->
+</body>
+</html>
